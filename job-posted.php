@@ -1,3 +1,19 @@
+<?php require 'includes/db-connection.php';
+  
+  if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    $companyName = htmlspecialchars($_POST['companyname']);
+    $jobName = htmlspecialchars($_POST['jobname']);
+    $contact = htmlspecialchars($_POST['contact']);
+    $category = $_POST['category'];
+    $jobDescription = htmlspecialchars($_POST['jobdescription']);
+    $timeDate = htmlspecialchars($_POST['timedate']);
+    $ipAddress = htmlspecialchars($_POST['ip']);
+  }
+  
+  $query = "INSERT INTO info VALUES('', '$companyName', '$jobName', '$contact', '$category', '$jobDescription', '$timeDate', '$ipAddress')";
+  mysqli_query($conn, $query);
+
+  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

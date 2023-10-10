@@ -1,5 +1,13 @@
 body {
   background-color: #121318;
+  /* background: rgb(162, 89, 27);
+  background: linear-gradient(
+    144deg,
+    rgba(162, 89, 27, 1) 0%,
+    rgba(17, 19, 24, 1) 21%
+  );
+  background-attachment: fixed; */
+  height: 100%;
   font-family: "Lato", sans-serif;
 }
 
@@ -65,6 +73,12 @@ body {
   background: -webkit-linear-gradient(#fe891c, #f35b29);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.orange-button {
+  padding: 10px;
+  background: -webkit-linear-gradient(#fe891c, #f35b29);
+  color: #fff;
 }
 
 /*  */
@@ -138,4 +152,71 @@ input[type="submit"] {
   .container {
     margin: 20px;
   }
+}
+
+/*  */
+/*  */
+/*  */
+/* INDEX MAIN PAGE  */
+/*  */
+/*  */
+/*  */
+
+.try-now-btn {
+  background: -webkit-linear-gradient(#fe891c, #f35b29);
+  border: 1px solid transparent;
+  padding: 15px;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.main-section-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2em;
+}
+
+.newest-jobs-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.newest-jobs-section h2 {
+  color: white;
+}
+
+.job-position {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.job-info {
+  background: #0b0c0f;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.job-info a {
+  text-decoration: none;
+  color: white;
+}
+
+.job-info ul {
+  padding: 0;
+}
+
+.job-info li {
+  list-style-type: none;
+  margin: 1em;
+}
+
+.job-info p {
+  margin: 0;
+  text-align: center;
 }
